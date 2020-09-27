@@ -52,5 +52,4 @@ for obj in response['Contents']:
   print(obj['Key'])
   # Print public object URL: bucketname.s3.amazonaws.com/key, 
   # previously above the object has been set public-read with ACL
-  print("https://{}.s3.amazonaws.com/{}".format(Bucket_name,
-        obj['Key']))
+  print("https://{}.s3.amazonaws.com/{}".format(Bucket_name, obj['Key']))
