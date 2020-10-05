@@ -88,7 +88,7 @@ def public_object_url(object_name, bucket_name = bucket_name):
     :return: tuple with the object name and the public url
     """
   # public object URL: bucket_name.s3.amazonaws.com/key, 
-    url_object = "https://{}.s3.amazonaws.com/{}".format(bucket_name, obj['Key'])
+    url_object = "https://{}.s3.amazonaws.com/{}".format(bucket_name, object_name)
     return (object_name, url_object)
 
 
